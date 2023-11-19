@@ -1,0 +1,8 @@
+programa teste1
+variaveis
+    a,b,c;
+	a <- 1;
+	b <- 2;
+	c <- a + b;
+	escrever( c )
+fim	

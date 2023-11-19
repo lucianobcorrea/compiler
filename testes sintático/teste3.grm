@@ -1,0 +1,19 @@
+programa teste3
+variaveis
+    a,b,c;
+	a <- 1;
+	b <- 2.14;
+	c <- a + b;
+
+	if(a > b) {
+	  escrever(a);
+	}else {
+	  escrever(b);
+	}
+	escrever( c );
+
+	while(a < b) {
+	  a <- a + 1;
+	  escrever(a);
+	}
+fim	
