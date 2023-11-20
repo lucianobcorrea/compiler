@@ -743,10 +743,10 @@ public class Sintatico {
             token = T_MAIOR;
         }
     } else if ( lookAhead == FIM_ARQUIVO ){
-         token = T_FIM_FONTE;    	
+        token = T_FIM_FONTE;
     } else {
-    	token = T_ERRO_LEX;
-    	sbLexema.append( lookAhead );
+        token = T_ERRO_LEX;
+        sbLexema.append( lookAhead );
     }
         
     lexema = sbLexema.toString();  
@@ -814,7 +814,7 @@ public class Sintatico {
 		
 		fileChooser.setFileSelectionMode( JFileChooser.FILES_ONLY );
 
-		FiltroSab filtro = new FiltroSab();
+      FiltroSabSintatico filtro = new FiltroSabSintatico();
 	    
 		fileChooser.addChoosableFileFilter( filtro );
 		int result = fileChooser.showOpenDialog( null );
@@ -852,7 +852,7 @@ public class Sintatico {
 			
 		fileChooser.setFileSelectionMode( JFileChooser.FILES_ONLY );
 
-		FiltroSab filtro = new FiltroSab();
+        FiltroSabSintatico filtro = new FiltroSabSintatico();
 		    
 		fileChooser.addChoosableFileFilter( filtro );
 		int result = fileChooser.showSaveDialog( null );
@@ -936,7 +936,7 @@ public class Sintatico {
 /**
  * Classe Interna para criacao de filtro de selecao
  */
-class FiltroSab extends FileFilter {
+class FiltroSabSintatico extends FileFilter {
 
 	public boolean accept(File arg0) {
 	   	 if(arg0 != null) {

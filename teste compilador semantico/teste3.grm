@@ -2,7 +2,7 @@ programa teste3
 variaveis
     a,b,c;
 	a <- 1;
-	b <- 2.14;
+	b <- 21;
 	c <- a + b;
 
 	if(a > b) {

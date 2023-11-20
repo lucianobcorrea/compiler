@@ -2,7 +2,7 @@ programa teste2
 variaveis
     a,b,c;
 	a <- 1;
-	b <- 2.14;
+	b <- 2,14;
 	c <- a + b;
 
 	if(a > b) {
@@ -13,7 +13,7 @@ variaveis
 	escrever( c );
 
 	while(a < b) {
-	  a++;
+	  a <- a + 1;
 	  escrever(a);
 	}
 fim	
